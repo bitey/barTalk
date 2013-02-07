@@ -16,6 +16,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    // Setup the background
+    
+    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         self.viewController = [[MMViewController alloc] initWithNibName:@"MMViewController_iPhone" bundle:nil];
     } else {

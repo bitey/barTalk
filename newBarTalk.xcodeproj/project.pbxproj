@@ -19,6 +19,9 @@
 		B4165CC016C3232200679356 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4165CBF16C3232200679356 /* MMViewController.m */; };
 		B4165CC316C3232200679356 /* MMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4165CC116C3232200679356 /* MMViewController_iPhone.xib */; };
 		B4165CC616C3232200679356 /* MMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4165CC416C3232200679356 /* MMViewController_iPad.xib */; };
+		B4165CCE16C325A600679356 /* MMUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B4165CCD16C325A600679356 /* MMUITextField.m */; };
+		B4165CD316C35F0300679356 /* background.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B4165CD216C35F0300679356 /* background.JPG */; };
+		B4165CD516C3623100679356 /* mobile-makers-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B4165CD416C3623100679356 /* mobile-makers-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,10 @@
 		B4165CBF16C3232200679356 /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		B4165CC216C3232200679356 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMViewController_iPhone.xib; sourceTree = "<group>"; };
 		B4165CC516C3232200679356 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MMViewController_iPad.xib; sourceTree = "<group>"; };
+		B4165CCC16C325A600679356 /* MMUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUITextField.h; sourceTree = "<group>"; };
+		B4165CCD16C325A600679356 /* MMUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUITextField.m; sourceTree = "<group>"; };
+		B4165CD216C35F0300679356 /* background.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.JPG; sourceTree = "<group>"; };
+		B4165CD416C3623100679356 /* mobile-makers-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-makers-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +92,14 @@
 		B4165CAC16C3232200679356 /* newBarTalk */ = {
 			isa = PBXGroup;
 			children = (
+				B4165CD416C3623100679356 /* mobile-makers-logo.png */,
+				B4165CD216C35F0300679356 /* background.JPG */,
 				B4165CB516C3232200679356 /* MMAppDelegate.h */,
 				B4165CB616C3232200679356 /* MMAppDelegate.m */,
 				B4165CBE16C3232200679356 /* MMViewController.h */,
 				B4165CBF16C3232200679356 /* MMViewController.m */,
+				B4165CCC16C325A600679356 /* MMUITextField.h */,
+				B4165CCD16C325A600679356 /* MMUITextField.m */,
 				B4165CC116C3232200679356 /* MMViewController_iPhone.xib */,
 				B4165CC416C3232200679356 /* MMViewController_iPad.xib */,
 				B4165CAD16C3232200679356 /* Supporting Files */,
@@ -168,6 +179,8 @@
 				B4165CBD16C3232200679356 /* Default-568h@2x.png in Resources */,
 				B4165CC316C3232200679356 /* MMViewController_iPhone.xib in Resources */,
 				B4165CC616C3232200679356 /* MMViewController_iPad.xib in Resources */,
+				B4165CD316C35F0300679356 /* background.JPG in Resources */,
+				B4165CD516C3623100679356 /* mobile-makers-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +194,7 @@
 				B4165CB316C3232200679356 /* main.m in Sources */,
 				B4165CB716C3232200679356 /* MMAppDelegate.m in Sources */,
 				B4165CC016C3232200679356 /* MMViewController.m in Sources */,
+				B4165CCE16C325A600679356 /* MMUITextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +293,7 @@
 				GCC_PREFIX_HEADER = "newBarTalk/newBarTalk-Prefix.pch";
 				INFOPLIST_FILE = "newBarTalk/newBarTalk-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,6 +305,7 @@
 				GCC_PREFIX_HEADER = "newBarTalk/newBarTalk-Prefix.pch";
 				INFOPLIST_FILE = "newBarTalk/newBarTalk-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -313,6 +329,7 @@
 				B4165CCB16C3232200679356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

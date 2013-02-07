@@ -7,9 +7,16 @@
 //
 
 #import "MMViewController.h"
+#import "MMUITextField.h"
 
 @interface MMViewController ()
 
+{
+    MMUITextField * newTextField;
+    UIImageView *background;
+    NSString *welcomeMsg;
+    
+}
 @end
 
 @implementation MMViewController
@@ -18,6 +25,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mobile-makers-logo.png"]];
+    [[self view] setBackgroundColor:[UIColor whiteColor]];
+
+    newTextField = [[MMUITextField alloc]initWithFrame:CGRectMake(10, 180, 300, 50)];
+    [newTextField setDelegate:self];
+
+    [[self view] addSubview:background];
+    [[self view] addSubview:newTextField];
+    
+
+    
+
+    
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
